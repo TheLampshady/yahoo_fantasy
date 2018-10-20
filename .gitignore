@@ -1,0 +1,23 @@
+*~
+*.pyc
+*.DS_Store
+.idea
+*.pem
+*.p12
+*.coverage
+*.log
+.sass-cache
+*.datastore
+*.mo
+
+*libs/
+*venv/
+*gae_storage/
+
+# Keys
+service_account.json
+network/*.json
+
+# Jupyter
+*.ipynb_checkpoints/
+
