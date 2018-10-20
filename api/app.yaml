@@ -31,35 +31,16 @@ skip_files:
 - ^(.*/)?\.DS_Store
 - ^(.*/)?\.coveragerc
 - ^(.*/)?\.datastore
+- .*README.md
+- .*Makefile
+- .*package.json
 
 # App Directory
 - ^(.*/)?.*\.sh
-- .*package.json
-- .*node_modules(/.*)?
+- .*node_modules
+- .*gae_storage
+- .*tests
 
-skip_files:
-#File Types
-- ^(.*/)?#.*#
-- ^(.*/)?.*~
-- ^(.*/)?.*\.py[co]
-- ^(.*/)?.*\.scss
-- ^(.*/)?.*\.soy
-- ^(.*/)?.*\.log
-- ^(.*/)?.*/RCS/.*
-- ^(.*/)?\..*
-- ^(.*/)?\.DS_Store
-- ^(.*/)?\.coveragerc
-- ^(.*/)?\.datastore
-
-#Root Directory
-- README.md
-- Makefile
-
-#Children Directory
-- .*tests/.*
-- .*egg-info/.*
-- .*dist-info/.*
-- ^static/js/common/closure-library.*
 
 #Specific Files
 - ^(.*/)?.*(?<!robots)\.txt  # exclude all except robots.txt

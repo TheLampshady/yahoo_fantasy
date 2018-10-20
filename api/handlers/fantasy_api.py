@@ -50,6 +50,6 @@ class FantasyAPI(remote.Service):
             raise endpoints.BadRequestException("Name Required.")
         result = dict(
             success=True,
-            data=dict()
+            result=dict()
         )
         return Result(**result)

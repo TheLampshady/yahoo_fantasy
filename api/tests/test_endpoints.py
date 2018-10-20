@@ -2,10 +2,11 @@ from gae_base import GAEBaseTest
 
 from mock import patch
 from endpoints import BadRequestException
+from handlers import fantasy_api as mock_import
 from handlers.fantasy_api import FantasyAPI
 
 
-# @patch.object(mock_import, 'fetch_page_async', MockAsyncPage())
+@patch.object(mock_import, 'process_user', lambda: "test@email.com")
 class TestFantasyEndpoints(GAEBaseTest):
 
     def setUp(self):
