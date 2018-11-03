@@ -17,6 +17,7 @@
 # Keys
 service_account.json
 *_key.json
+*token.txt
 
 # Jupyter
 *.ipynb_checkpoints/
